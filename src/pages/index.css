@@ -3,6 +3,17 @@
     display: flex;
     background-color: lightgreen;
     margin: 10px;
-    width: 150px;
-    height: 150PX;
+    width: 300px;
+    height: 310PX;
+}
+.tudo{
+    border: 5px dashed;
+    background-color: aqua;
+    border-color: brown;
+
+}
+.textoimg{
+
+    border: 10px dashed;
+    font-size: 10;
 }

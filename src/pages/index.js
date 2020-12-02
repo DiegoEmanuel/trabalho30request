@@ -7,7 +7,7 @@ import './index.css'
 const Pizza = () => {    
 
     const [pizza,setPizza] = useState(null);
-    const [pizza2,setPizza2] = useState(null);
+
 
 
     useEffect(()=>{
@@ -22,42 +22,26 @@ const Pizza = () => {
     if (pizza === null){
         return<p>Carregando....</p>
     }
-
-    
-    async function pegarDados2()   {
-        const resposta = await axios.get('https://foodish-api.herokuapp.com/api/')
-        setPizza2( resposta.data )
-    }
-    pegarDados2();  
-
     return (
-    <> 
-    
+    <section class="tudo"> 
+    <div clas='textoimg'></div>
         <h1>_____Produto______</h1>  
         <img className='img-pizza' src={pizza.image}  />
 
+        
+        <h1>_____Produto______</h1>  
+        <img className='img-pizza' src={pizza.image}  />
+        
+        <h1>_____Produto______</h1>  
+        <img className='img-pizza' src={pizza.image}  />    
 
+        
         <h1>_____Produto______</h1>  
         <img className='img-pizza' src={pizza.image}  />
 
+        
         <h1>_____Produto______</h1>  
         <img className='img-pizza' src={pizza.image}  />
-
-
-        <h1>_____Produto______</h1>  
-        <img className='img-pizza' src={pizza.image}  />
-
-
-        <h1>_____Produto______</h1>  
-        <img className='img-pizza' src={pizza.image}  />
-
-        <h1>_____Produto______</h1>  
-        <img className='img-pizza' src={pizza.image}  />
-
-
-        <h1>_____Produto______</h1>  
-        <img className='img-pizza' src={pizza.image}  />
-
 
         <h1>_____Produto______</h1>  
         <img className='img-pizza' src={pizza.image}  />
@@ -67,6 +51,14 @@ const Pizza = () => {
         <img className='img-pizza' src={pizza.image}  />
 
 
+        <h1>_____Produto______</h1>  
+        <img className='img-pizza' src={pizza.image}  />
+
+
+        <h1>_____Produto______</h1>  
+        <img className='img-pizza' src={pizza.image}  />
+
+        <div clas='textoimg'></div>
         <h1>_____Produto______</h1>  
         <img className='img-pizza' src={pizza.image}  />
 
@@ -113,7 +105,7 @@ const Pizza = () => {
         <h1>_____Produto______</h1>  
         <img className='img-pizza' src={pizza.image}  />
 
-
+        <div clas='textoimg'> Imagem20 </div>
         <h1>_____Produto______</h1>  
         <img className='img-pizza' src={pizza.image}  />
 
@@ -160,12 +152,12 @@ const Pizza = () => {
         <h1>_____Produto______</h1>  
         <img className='img-pizza' src={pizza.image}  />
 
-
+        <div clas='textoimg'> Imagem30 </div>
         <h1>_____Produto______</h1>  
         <img className='img-pizza' src={pizza.image}  />
 
 
-    </>)
+    </section>)
 
 
 
